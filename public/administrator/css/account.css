@@ -1,0 +1,49 @@
+div {
+    border: 1px brown solid;
+    border: none;
+  }
+
+  .row {
+    padding: 10px 0;
+  }
+  .btn-edit {
+    background-color:#0D6EFD;
+    color: black;
+  }
+  .btn-delete{
+    background-color:#ff6147 ;
+  }.btn-logout{
+    background-color:#ff6147 ;
+  }
+
+  .nav-item .nav-link:hover {
+    background-color: #ff6147;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .navbar-brand {
+    font-family: "CARTOON FREE", sans-serif;
+    text-align: center;
+    display: block;
+    font-size: 34px;
+    color: #ff6147;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead tr {
+    border-bottom: 1px solid black;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  table tbody tr:nth-child(odd) {
+    background-color: #eee;
+  }

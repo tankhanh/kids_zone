@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Caveat
+Author: Impallari Type
+Url: https://fonts.google.com/specimen/Caveat
+
+Font: Amatic SC
+Author: Vernon Adams,Ben Nathan,Thomas Jockin,Cyreal
+Url: https://fonts.google.com/specimen/Amatic+SC

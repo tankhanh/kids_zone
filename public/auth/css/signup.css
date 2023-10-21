@@ -1,0 +1,167 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit; }
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%; }
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif; }
+
+/* style signup */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: monospace;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.signup-container {
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: #ff6147;
+  position: relative; 
+  bottom: -20px;
+  background-color: #FD8876;
+  transform: translateX(0);
+}
+
+.signup-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #EDEEF3; 
+}
+.signup-container img{
+    border-radius: 12px;
+  }
+
+.signup-container form {
+  display: flex;
+  flex-direction: column; }
+
+.signup-container form label {
+  position: absolute;
+  left: 0;
+  padding: 10px 22px;
+  color: linear-gradient(to right, #141E30, #243B55);
+  font-size: 1.0rem;
+  pointer-events: none;
+  transition: 0.5s;
+  color: black; }
+
+.signup-container form input {
+  width: 100%;
+  padding: 7px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+  color: black;
+  font-size: 1.4rem; }
+
+input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-1.5rem);
+  color: linear-gradient(to right, #141E30, #243B55);
+  font-size: 0.75rem; }
+
+.signup-container form button {
+  padding: 10px;
+  border: none;
+  background-color: #FF6147;
+  color: #EDEEF3;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold; 
+  width: auto;
+  margin: 0;
+}
+
+.signup-container form button:hover {
+  background-color: white;
+  color: #FF6147;
+}
+
+.signup-container form a {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333; }
+
+.signup-container form a:hover {
+  color: #555; }
+
+.signup-container .forgot-password {
+  margin-top: 14px;
+  border: none;
+  border-radius: 5px;
+  color: #EDEEF3;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  text-decoration: none; }
+
+.signup-container .forgot-password a {
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none; }
+
+.signup-container .forgot-password a:hover {
+  color: white;
+}
+.signup-container h1 {
+  font-size: 20px;
+  text-align: center;
+}
+.signup-container h1 a:hover {
+  text-decoration: none;
+}
+a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: white;
+}
+
+/* animantion cho form chuyển động từ phải sang trái */
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.signup-container.animated {
+  animation: slideInRight 1s ease-in-out;
+}

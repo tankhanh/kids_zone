@@ -1,0 +1,57 @@
+
+body {
+  font-family: 'Comic Sans MS', cursive;
+}
+.info {
+        background-color: white;
+    }
+.pay {
+        background-color: #f0f0f0;
+    }
+.row {
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px 20px 20px 20px;
+    }
+.card-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    margin-right: 30px; 
+}
+.price {
+    text-align: center;
+}
+#flashing-text {
+    font-size: 40px;
+    color: red;
+    animation: flashing 1s infinite alternate;
+    font-weight: bold;
+  }
+  
+  @keyframes flashing {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .list-group-item img {
+    border-radius: 10px;
+  }
+  .card-body form button {
+    padding: 5px;
+    border: none;
+    background-color: #FF6147;
+    color: #EDEEF3;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold; 
+    width: auto;
+    margin: 0;
+  }

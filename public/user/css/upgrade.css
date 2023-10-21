@@ -1,0 +1,78 @@
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.package_tables {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép wrap để các .pack có thể nằm trên cùng một hàng */
+  justify-content: space-between;
+}
+
+.package_tables .pack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.pack h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pack p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.pack strong {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center; /* Đảm bảo văn bản ở giữa */
+}
+
+.package_tables .pack .action {
+  display: flex;
+  flex-direction: column; /* Hiển thị nút theo chiều dọc */
+  justify-content: space-between; /* Tạo khoảng cách giữa nút */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  margin-top: 10px;
+}
+
+.package_tables .pack a {
+  display: flex;
+  justify-content: center;
+  /* background-color: #ff6147; */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px; /* Giảm kích thước nút */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của container .action */
+  margin-bottom: 5px; /* Tạo khoảng cách giữa nút */
+  font-size: 15px;
+}
+
+.addtocart{
+  background-color: #ff6147;
+}
+
+.package_tables .pack .addtocart:hover {
+  background-color: #e84127;
+}
+
+.package_tables .pack a:active {
+  transform: scale(0.95);
+}
